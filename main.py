@@ -39,7 +39,7 @@ async def on_interaction(interaction: Interaction):
 
 async def green_button_clicked(interaction: Interaction):
     t = "관리자 출근"
-    d = f"{interaction.user.display_name}님이 출근하였습니다."
+    d = f"{interaction.user.mention}님이 출근하였습니다."
     c = discord.Colour.green()
     e = discord.Embed(title=t, description=d, colour=c)
     e.timestamp = datetime.datetime.now()
@@ -52,7 +52,7 @@ async def green_button_clicked(interaction: Interaction):
     
 async def red_button_clicked(interaction: Interaction):
     t = "관리자 퇴근"
-    d = f"{interaction.user.display_name}님이 퇴근하였습니다."
+    d = f"{interaction.user.mention}님이 퇴근하였습니다."
     c = discord.Colour.red()
     e = discord.Embed(title=t, description=d, colour=c)
     e.timestamp = datetime.datetime.now()
